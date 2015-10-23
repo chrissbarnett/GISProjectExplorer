@@ -1,0 +1,60 @@
+<div class="modal-header">
+    <h2>{{formText.display.header}}</h2>
+</div>
+ <div class="modal-body">
+
+    <form name="posterForm">
+        <div class="form-group">
+
+            <div class="col-md-4"><input type="file" data-nv-file-select data-uploader="uploader" /></div>
+
+            <div data-ng-repeat="item in uploader.queue">
+                <div class="col-md-1" ng-show="uploader.isHTML5" nowrap>{{ item.file.size /1024/1024 | number:2 }} MB </div>
+                <div class="col-md-2" ng-show="uploader.isHTML5">
+                    <div class="progress" style="margin-bottom: 0;">
+                        <div class="progress-bar" role="progressbar" ng-style="{ 'width': item.progress + '%' }"></div>
+                    </div>
+                </div>
+                <div class="col-md-1" class="text-center">
+                    <span ng-show="posterItem.isSuccess"><i class="glyphicon glyphicon-ok"></i></span>
+                    <span ng-show="posterItem.isCancel"><i class="glyphicon glyphicon-ban-circle"></i></span>
+                    <span ng-show="posterItem.isError"><i class="glyphicon glyphicon-remove"></i></span>
+                </div>
+                <div class="col-md-1" nowrap>
+                    <button type="button" class="btn btn-danger btn-xs" ng-click="item.remove()">
+                        <span class="glyphicon glyphicon-trash"></span> Remove
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" ng-model="isWinner">
+                    Poster was a winner at the expo?
+                </label>
+            </div>
+        </div>
+
+        <div class="form-group" nowrap>
+            <button type="button" class="btn btn-default" ng-click="uploader.uploadAll()" ng-disabled="uploader.isUploading">
+                <span class="glyphicon glyphicon-upload"></span> Upload
+            </button>
+            <button type="button" class="btn btn-warning" ng-click="uploader.cancelAll()" ng-disabled="!uploader.isUploading">
+                <span class="glyphicon glyphicon-ban-circle"></span> Cancel
+            </button>
+        </div>
+
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" ng-click="uploader.next()" ng-disabled="uploader.isUploading">
+        <span class="glyphicon glyphicon-upload"></span> Next
+    </button>
+    <button type="button" class="btn btn-warning" ng-click="uploader.cancelAll()" ng-disabled="!uploader.isUploading">
+        <span class="glyphicon glyphicon-ban-circle"></span> Cancel
+    </button>
+
+</div>

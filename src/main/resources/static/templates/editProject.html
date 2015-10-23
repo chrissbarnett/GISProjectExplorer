@@ -1,0 +1,145 @@
+
+
+<div class="content container">
+
+
+    <h2>Upload Poster</h2>
+
+    <div class="col-md-11" style="margin-bottom: 40px; margin-top: 40px;">
+        <div class="poster-container col-md-6">
+            <img ng-show="project.poster.thumbnail_url" ng-src="{{project.poster.thumbnail_url}}" alt="Poster Thumbnail" class="img-thumbnail">
+            <div ng-hide="project.poster.thumbnail_url" class="poster-placeholder holderjs"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <button class="btn btn-default" data-ng-click="openPosterForm()">Upload Poster</button>
+    </div>
+</div>
+<div>
+
+    <div class="content container">
+        <div>
+            <h2>Upload Paper</h2>
+
+            <div class="col-md-11" style="margin-bottom: 40px; margin-top: 40px;">
+                <div class="paper-container col-md-6">
+                    <img ng-show="project.paper.thumbnail_url" ng-src="{{project.paper.thumbnail_url}}" alt="Paper Thumbnail" class="img-thumbnail">
+                    <div ng-hide="project.paper.thumbnail_url" class="paper-placeholder holderjs"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <button class="btn btn-default" data-ng-click="openPaperForm()">Upload Paper</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="content container">
+        <div>
+            <h2>Project</h2>
+
+            <fieldset class="form-group">
+                <label for="projectTitle">Title</label>
+                <input type="text" data-ng-model="project.title" id="projectTitle" class="form-control" placeholder="Enter project title"/>
+            </fieldset>
+
+            <!-- modal form for poster upload -->
+
+            <!-- modal form for paper upload -->
+
+
+
+            <fieldset class="form-group">
+                <label for="course">Course</label>
+                <select type="text" data-ng-model="project.course" data-ng-options="course for course in availableCourses"  id="course" class="form-control">
+                    <option value="">Select Course</option>
+                </select>
+            </fieldset>
+
+
+            <h3>Keywords</h3>
+            <fieldset class="form-group">
+                <label for="keywords_1">Level 1 Keywords</label>
+                <select type="text" data-ng-model="project.keywords_1" data-ng-options="kw for kw in keywords_1"  id="keywords_1" class="form-control">
+                    <option value="">Select keywords</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label for="keywords_2">Level 2 Keywords</label>
+                <select type="text" data-ng-model="project.keywords_2" data-ng-options="kw for kw in keywords_2"  id="keywords_2" class="form-control">
+                    <option value="">Select keywords</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label for="keywords_3">Level 1 Keywords</label>
+                <select type="text" data-ng-model="project.keywords_3" data-ng-options="kw for kw in keywords_3"  id="keywords_3" class="form-control">
+                    <option value="">Select keywords</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label for="geonames">GeoNames Id(s)</label>
+                <select type="text" data-ng-model="project.geonames" data-ng-options="gn for gn in geonames"  id="geonames" class="form-control">
+                    <option value="">Select GeoNames Ids</option>
+                </select>
+            </fieldset>
+
+            <!-- student info form should be inline; does it need a separate controller? -->
+            <div>
+            <h2>Student</h2>
+
+                <fieldset class="form-group">
+                    <label for="studentName">Name</label>
+                    <input type="text" data-ng-model="project.student.name" id="studentName" class="form-control" placeholder="Enter student name"/>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <label for="studentSchool">Semester</label>
+                    <select type="text" data-ng-model="project.student.school" data-ng-options="school for school in availableSchools"  id="studentSchool" class="form-control">
+                        <option value="">School</option>
+                    </select>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <label for="studentDepartment">Department(s)</label>
+                    <select type="text" data-ng-model="project.student.department" data-ng-options="dept for dept in availableDepartments"  id="studentDepartment" class="form-control">
+                        <option value="">Department</option>
+                    </select>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <label for="studentDegree">Degree</label>
+                    <input type="text" data-ng-model="project.student.degree" id="studentDegree" class="form-control" placeholder="Enter student Degree"/>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <label for="graduationYear">Year</label>
+                    <select type="text" data-ng-model="project.student.year" data-ng-options="year for year in availableYears" id="graduationYear" class="form-control">
+                        <option value="">Graduation Year</option>
+                    </select>
+
+                </fieldset>
+
+        </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" ng-model="project.isSearchable" CHECKED>
+                        Make this project Searchable?
+                    </label>
+                </div>
+            </div>
+
+
+
+        </div>
+
+</div>
+    <input type="button" class="btn btn-danger" data-ng-click="reset()" value="Reset" />
+    <input type="submit" class="btn btn-primary" data-ng-click="save()" value="Save" />
+    <input type="button" class="btn btn-warning" ng-click="cancel()" value="Cancel"/>
+    </div>

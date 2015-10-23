@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<groups xmlns="http://www.isdc.ro/wro">
+    <!-- package for angular libraries and related -->
+    <group name="libs-angular">
+        <js minimize="false">webjar:angular.min.js</js>
+        <js minimize="false">webjar:angular-route.min.js</js>
+        <js minimize="false">webjar:ui-bootstrap-tpls.min.js</js>
+        <js minimize="false">webjar:ui-grid.min.js</js>
+        <js minimize="false">webjar:angular-file-upload.min.js</js>
+        <js>webjar:holder.js</js>
+
+        <!-- use classpath locator.. there is bug that affects url rewriting to resources in the webjar locator -->
+        <css>classpath:META-INF/resources/webjars/bootstrap/**bootstrap.css</css>
+        <css>classpath:META-INF/resources/webjars/ui-grid/**ui-grid.css</css>
+    </group>
+    <!-- package for application specific javascript and css -->
+    <group name="gisExplorer">
+        <js>classpath:static/javascript/explorerApp.js</js>
+        <js>classpath:static/javascript/services/services.js</js>
+        <js>classpath:static/javascript/services/*Service.js</js>
+        <js>classpath:static/javascript/controllers/explorerControllers.js</js>
+        <js>classpath:static/javascript/controllers/*Controller.js</js>
+
+        <css>classpath:static/css/**.css</css>
+    </group>
+</groups>

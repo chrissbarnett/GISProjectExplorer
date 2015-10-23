@@ -1,0 +1,45 @@
+spring:
+  data:
+    rest:
+      base-uri: /api
+
+wro_config:
+  url_pattern: /wro/*
+  model: wro.xml
+  properties: wro.properties
+
+security:
+  user:
+    name: admin
+    password: jumbo
+
+multipart:
+  maxFileSize: 50Mb
+
+#should attach to profiles
+solr:
+  url: http://localhost:8983/solr/posters
+
+geocoder:
+  url: http://107.22.195.129/clavin/geocode
+
+data_directory:
+  path: /usr/local/gis_explorer
+  resource_directory: resources
+
+
+---
+
+spring:
+    profiles: dev
+    datasource:
+      platform: h2
+
+
+---
+
+spring:
+    profiles: prod
+    datasource:
+      platform: mysql
+

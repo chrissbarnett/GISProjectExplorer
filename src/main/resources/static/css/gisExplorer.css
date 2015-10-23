@@ -1,0 +1,22 @@
+
+.header {
+    background: whitesmoke;
+}
+
+/* ui-grid */
+.grid {
+    max-width: 1000px;
+    max-height: 500px;
+    min-height: 300px;
+    margin: 0 0 5px 0;
+}
+
+#projects-grid .ui-grid-cell {
+    height: 300px;
+}
+.poster-placeholder {
+    background:url('?holder.js/300x200/text:Background%20placeholder/^eee:^222')
+    width: 300px;
+    height: 200px;
+}
+

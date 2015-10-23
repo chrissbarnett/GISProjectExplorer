@@ -1,0 +1,39 @@
+<div class="modal-header">
+    <h2>{{formText.display.header}}</h2>
+</div>
+ <div class="modal-body">
+
+    <form name="courseForm">
+
+        <fieldset class="form-group">
+            <label for="courseName">Course Name</label>
+            <input type="text" data-ng-model="editedItem.name" id="courseName" class="form-control" placeholder="Enter course name"/>
+        </fieldset>
+
+        <fieldset class="form-group">
+            <label for="courseSemester">Semester</label>
+            <select type="text" data-ng-model="editedItem.semester" data-ng-options="semester for semester in availableSemesters"  id="courseSemester" class="form-control">
+                <option value="">Semester</option>
+            </select>
+        </fieldset>
+
+        <fieldset class="form-group">
+            <label for="courseYear">Year</label>
+            <select type="text" data-ng-model="editedItem.year" data-ng-options="year for year in availableYears" id="courseYear" class="form-control">
+                <option value="">Year</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset class="form-group">
+            <label for="courseInstructor">Instructor</label>
+            <input type="text" data-ng-model="editedItem.instructor" id="courseInstructor" class="form-control" placeholder="Enter course Instructor"/>
+        </fieldset>
+    </form>
+</div>
+<div class="modal-footer">
+    <input type="button" class="btn btn-danger" data-ng-click="reset()" value="Reset" />
+    <input type="submit" class="btn btn-primary" data-ng-click="save()" value="Save" />
+    <input type="button" class="btn btn-warning" ng-click="cancel()" value="Cancel"/>
+
+</div>

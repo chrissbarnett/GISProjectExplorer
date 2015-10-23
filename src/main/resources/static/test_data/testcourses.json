@@ -1,0 +1,25 @@
+{
+  "_embedded" : {
+    "courses" : [ {
+      "name" : "GIS 101",
+      "semester" : "fall",
+      "year" : "2014",
+      "instructor" : "Zimmerman",
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/courses/0"
+        }
+      }
+    }, {
+      "name" : "GIS 101",
+      "semester" : "spring",
+      "year" : "2015",
+      "instructor" : "Cote",
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/courses/1"
+        }
+      }
+    } ]
+  }
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="/wro/libs-angular.css">
+    <link rel="stylesheet" href="/wro/gisExplorer.css">
+
+    <script type="text/javascript" src="/wro/libs-angular.js"></script>
+    <script type="text/javascript" src="/wro/gisExplorer.js"></script>
+
+    <base href="/">
+
+</head>
+<body data-ng-app="explorerAdminApp">
+
+    <div class="header">
+        <div class="container">
+            <!-- add a navbar here -->
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <!-- Note: set the initial collapsed state and change it when clicking -->
+                        <a ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed" class="btn btn-navbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="/">GIS Project Explorer</a>
+                        <!-- Note: use "collapse" here. The original "data-" settings are not needed anymore. -->
+                        <div collapse="navCollapsed" class="nav-collapse collapse navbar-responsive-collapse">
+                            <ul class="nav">
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="projects">Projects</a></li>
+                                <li><a href="courses">Courses</a></li>
+                            </ul>
+
+                        </div><!-- /.nav-collapse -->
+                    </div> <!-- /.container -->
+                </div><!-- /navbar-inner -->
+            </div><!-- /navbar -->
+
+
+            <div class="page-header">
+                <h1>Admin</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="content container" data-ng-view></div>
+
+    <div class="footer container"></div>
+
+
+</body>
+</html>

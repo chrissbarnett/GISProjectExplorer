@@ -1,0 +1,465 @@
+keywords:
+  thesaurus: methods
+    language: en
+      category:
+        id: 0
+        theme: Network Analysis
+      category:
+        id: 1
+        theme: Suitability Analysis
+      category:
+        id: 2
+        theme: Vulnerability Analysis
+      category:
+        id: 3
+        theme: Proximity Analysis
+      category:
+        id: 4
+        theme: Geostatistical Analysis
+      category:
+        id: 5
+        theme: Best Path – Least Cost Analysis
+      category:
+        id: 6
+        theme: Overlay Analysis
+      category:
+        id: 7
+        theme: Change Detection
+      category:
+        id: 8
+        theme: Spatial interpolation
+      category:
+        id: 9
+        theme: Spatial Analysis
+      category:
+        id: 10
+        theme: Needs Analysis
+
+  thesaurus: application topics
+    language: en
+      category:
+        id: 0
+        theme: Architecture, Engineering and Construction
+        term:
+          id: 0
+          value: Building and Landscape Architecture
+        term:
+          id: 1
+          value: Engineering & Design
+        term:
+          id: 2
+          value: Construction
+        term:
+          id: 3
+          value: Surveying
+      category:
+        id: 1
+        theme: Business and Commercial
+        term:
+          id: 0
+          value: Banking and Financial Services
+        term:
+          id: 1
+          value: Entertainment & Leisure
+        term:
+          id: 2
+          value: Insurance
+        term:
+          id: 3
+          value: Marketing
+        term:
+          id: 4
+          value: Manufacturing
+        term:
+          id: 5
+          value: Media
+        term: Real Estate
+        term: Retail
+      category:
+        id: 02
+        theme: Community Development
+        term:
+          id: 0
+          value: Community Maps
+        term:
+          id: 1
+          value: Economic Development
+        term:
+          id: 2
+          value: GeoDesign
+        term:
+          id: 3
+          value: Urban Planning
+        term:
+          id: 4
+          value: Regional Planning
+        term:
+          id: 5
+          value: Gentrification
+        term:
+          id: 6
+          value: Environmental Justice
+        term:
+          id: 7
+          value: Social inequality
+        term:
+          id: 8
+          value: Community Analysis
+        term:
+          id: 9
+          value: Community Advocacy
+        term:
+          id: 10
+          value: Policy
+        term:
+          id: 11
+          value: Management
+      category:
+        id: 03
+        theme: Defense and Intelligence
+        term:
+          id: 0
+          value: Military Operations
+        term:
+          id: 1
+          value: Intelligence
+        term:
+          id: 2
+          value: Installations and Environment
+        term:
+          id: 3
+          value: Human security
+        term:
+          id: 4
+          value: Conflict
+      category:
+        id: 04
+        theme: Education
+        term:
+          id: 0
+          value: Education
+        term:
+          id: 1
+          value: Training
+        term:
+          id: 2
+          value: Schools
+        term:
+          id: 3
+          value: Universities and Colleges
+      category:
+        id: 05
+        theme: Energy and Climate
+        term:
+          id: 0
+          value: Renewable Energy
+        term:
+          id: 1
+          value: Alternative Energy
+        term:
+          id: 2
+          value: Energy
+        term:
+          id: 3
+          value: Climate Change
+        term:
+          id: 4
+          value: Energy Planning
+        term:
+          id: 5
+          value: Atmosphere
+        term:
+          id: 6
+          value: Climate and Weather
+        term:
+          id: 7
+          value: Sea level rise
+        term:
+          id: 8
+          value: Sustainability
+      category:
+        id: 06
+        theme: Facilities
+        term:
+          id: 0
+          value: Portfolio Management
+        term:
+          id: 1
+          value: Operations and Maintenance
+        term:
+          id: 2
+          value: Safety and Security
+      category:
+        id: 07
+        theme: Finance and Development
+        term:
+          id: 0
+          value: International Development
+        term:
+          id: 1
+          value: Economic Development
+        term:
+          id: 2
+          value: Sustainable Development
+        term:
+          id: 3
+          value: Poverty Mapping
+        term:
+          id: 4
+          value: Human Security
+      category:
+        id: 08
+        theme: Government
+        term:
+          id: 0
+          value: Elections
+        term:
+          id: 1
+          value: Redistricting
+        term:
+          id: 2
+          value: State Government
+        term:
+          id: 3
+          value: Local Government
+        term:
+          id: 4
+          value: Federal
+        term:
+          id: 5
+          value: Census
+        term:
+          id: 6
+          value: Federal Agencies
+        term:
+          id: 7
+          value: Resilient communities
+        term:
+          id: 8
+          value: Economic Development
+        term:
+          id: 9
+          value: Facilities
+        term:
+          id: 10
+          value: Land Administration
+        term:
+          id: 11
+          value: Surveying
+      category:
+        id: 09
+        theme: Health and Human Services
+        term:
+          id: 0
+          value: Hospitals
+        term:
+          id: 0
+          value: Health Systems
+        term:
+          id: 1
+          value: Public Health
+        term:
+          id: 2
+          value: Exposure and Risk
+        term:
+          id: 3
+          value: Physical Activity
+        term:
+          id: 4
+          value: Human Services
+        term:
+          id: 5
+          value: Geomedicine
+      category:
+        id: 10
+        theme: Humanities
+        term:
+          id: 0
+          value: Archaeology
+        term:
+          id: 1
+          value: Cultural Resource Management
+        term:
+          id: 2
+          value: History
+      category:
+        id: 11
+        theme: Humanitarian Assistance
+        term:
+          id: 0
+          value: Humanitarian Aid
+        term:
+          id: 1
+          value: Humanitarian Relief
+        term:
+          id: 2
+          value: Emergency Management
+        term:
+          id: 3
+          value: Natural Disasters
+        term:
+          id: 4
+          value: Conflict
+        term:
+          id: 5
+          value: Human Security
+      category:
+        id: 12
+        theme: Infrastructure
+        term:
+          id: 0
+          value: Electric Utilities
+        term:
+          id: 1
+          value: Pipeline & Gas Utilities
+        term:
+          id: 2
+          value: Telecommunications
+        term:
+          id: 3
+          value: Locations Based Services
+        term:
+          id: 4
+          value: Public Works
+        term:
+          id: 5
+          value: Housing
+        term:
+          id: 6
+          value: Subsidized Housing
+      category:
+        id: 13
+        theme: Natural Resources
+        term:
+          id: 0
+          value: Agriculture
+        term:
+          id: 1
+          value: Climate Change
+        term:
+          id: 2
+          value: Conservation
+        term:
+          id: 3
+          value: Environmental Management
+        term:
+          id: 4
+          value: Forestry
+        term:
+          id: 5
+          value: Mining and Geosciences
+        term:
+          id: 6
+          value: Oceans and Maritime
+        term:
+          id: 7
+          value: Parks and natural resources
+        term:
+          id: 8
+          value: Fisheries
+        term:
+          id: 9
+          value: Wildlife Management
+        term:
+          id: 10
+          value: Petroleum
+        term:
+          id: 11
+          value: Water Resources
+      category:
+        id: 14
+        theme: Nutrition
+        term:
+          id: 0
+          value: Food Production
+        term:
+          id: 1
+          value: Food Access
+        term:
+          id: 2
+          value: Food Deserts
+        term:
+          id: 3
+          value: Food Insecurity
+        term:
+          id: 4
+          value: Inequity
+      category:
+        id: 15
+        theme: Public Safety
+        term:
+          id: 0
+          value: Emergency Calls and Dispatch
+        term:
+          id: 1
+          value: Emergency Management
+        term:
+          id: 2
+          value: Fire Rescue and EMS
+        term:
+          id: 3
+          value: Homeland Security
+        term:
+          id: 4
+          value: National Security
+        term:
+          id: 5
+          value: Law Enforcement
+        term:
+          id: 6
+          value: Criminal Justice
+        term:
+          id: 7
+          value: Wildland Fire Management
+        term:
+          id: 8
+          value: Professional Services
+      category:
+        id: 16
+        theme: Transportation
+        term:
+          id: 0
+          value: Aviation
+        term:
+          id: 1
+          value: Highways and Roads
+        term:
+          id: 2
+          value: Logistics
+        term:
+          id: 3
+          value: Railways
+        term:
+          id: 4
+          value: Ports and Maritime
+        term:
+          id: 5
+          value: Public Transit
+      category:
+        id: 17
+        theme: Water
+        term:
+          id: 0
+          value: Water Resources
+        term:
+          id: 1
+          value: Wastewater, storm water
+        term:
+          id: 2
+          value: Sea level rise
+        term:
+          id: 3
+          value: Water quality
+        term:
+          id: 4
+          value: Water quantity
+        term:
+          id: 5
+          value: Accessibility
+        term:
+          id: 6
+          value: Water Management
+        term:
+          id: 7
+          value: Hydraulic engineering
+
